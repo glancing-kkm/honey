@@ -10,6 +10,15 @@
 - `npm run typecheck` — 타입 검사
 - `npm test` — 장바구니 계산·수량·저장 데이터 검증
 
+## 배포
+
+Cloudflare Workers(`onggul-honey`)로 배포합니다.
+
+- `main`에 푸시하면 Workers Builds가 `npm run build` 후 `npx wrangler deploy`로 자동 배포합니다.
+- 다른 브랜치는 `npx wrangler versions upload`로 미리보기 버전만 올립니다.
+- 수동 배포: `npm run build && npx wrangler deploy`
+- 루트의 `wrangler.jsonc`는 Worker 이름 확인용이며, 실제 배포 설정은 빌드가 `dist/server/wrangler.json`에 생성합니다.
+
 ## 구현 기능
 
 상품 검색, 종류별 필터, 맛 비교 상세 팝업, 선물 컬렉션, FAQ, 장바구니 담기·삭제·수량 변경, 같은 브라우저의 장바구니 저장, 배송비 계산, 실제 결제 없는 주문 미리보기. 접근 가능한 Base UI 기반 팝업과 패널, 반응형 레이아웃, 키보드 포커스, 모션 감소 설정을 지원합니다.
