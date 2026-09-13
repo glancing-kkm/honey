@@ -9,5 +9,5 @@ export const metadata: Metadata = {
   description: '꽃마다 다른 향, 취향마다 다른 달콤함. 아카시아 꿀부터 깊은 밤꿀, 마음을 전하는 선물 세트까지 온꿀에서 만나보세요. 브랜드 쇼핑몰 시안.',
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="ko"><body><a href="#main" className="skip-link">본문으로 바로가기</a>{children}</body></html>;
+  return <html lang="ko"><head><link rel="preload" href="/fonts/bm-hanna-pro.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/><link rel="preload" href="/fonts/bm-hanna-air.woff2" as="font" type="font/woff2" crossOrigin="anonymous"/></head><body><a href="#main" className="skip-link">본문으로 바로가기</a>{children}</body></html>;
 }

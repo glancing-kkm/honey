@@ -31,3 +31,14 @@
 프로덕션 빌드, TypeScript, 장바구니 테스트 6개, 로컬 HTTP 응답 확인. 브라우저 시각·클릭 테스트는 수행하지 않았습니다.
 
 지원 브라우저에서 `document.modelContext`를 감지하여 `add_honey_to_cart` 도구를 등록합니다. 실제 결제가 아닌 시연 장바구니 작업이며 일반 UI와 상태를 공유합니다. 현재 환경에는 지원되는 WebMCP 검증 컨텍스트가 없어 이 도구의 등록·실행 계약 검증은 미수행입니다.
+
+## 서체 구성
+
+- **배달의민족 한나체 Pro**: 로고, 메인 제목, 섹션 제목, 상품명, 구매 CTA.
+- **배달의민족 한나체 Air**: 한국어 본문, 메뉴, 상품 설명. 작은 글자는 크기와 행간을 함께 조정했습니다.
+- **배달의민족 연성체**: 선물·브랜드 스토리 제목, 원형 문구, 푸터 슬로건.
+- **DM Sans**: 영문 라벨과 가격 숫자.
+
+배민 서체는 Debian의 원본 배포 패키지 `fonts-woowa-bm_20241002.orig.tar.gz`에서 가져와 글리프를 변경하지 않고 WOFF2로 압축했습니다. `public/fonts/`에서 직접 제공하며 한나 Pro/Air를 preload합니다. 저작권 및 OFL 라이선스 전문은 `public/fonts/BAEMIN-LICENSE.txt`에 포함했습니다. 글꼴의 지식재산권은 우아한형제들에 있습니다.
+
+출처: https://www.woowahan.com/fonts · https://deb.debian.org/debian/pool/main/f/fonts-woowa-bm/
