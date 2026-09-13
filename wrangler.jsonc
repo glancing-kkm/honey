@@ -1,0 +1,8 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  // Workers Builds reads the Worker name from this file. `npm run build`
+  // generates the full deploy config at dist/server/wrangler.json.
+  "name": "onggul-honey",
+  "compatibility_date": "2026-05-15",
+  "observability": { "enabled": true }
+}
